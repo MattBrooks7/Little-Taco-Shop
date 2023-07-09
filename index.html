@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Matt Brooks">
-    <meta name="description" content="This page contains information on the Little Taco Shop">
+    <meta name="description" content="The official website for The Little Taco Shop">
     <title>Little Taco Shop</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
     <header>
         <h1>Welcome to The Little Taco Shop</h1>
         <nav aria-label="primary-navigation">
             <ul>
                 <li>
-                    <a href="#about">About LTS</a>
+                    <a href="#about">About <abbr title="The Little Taco Shop"></abbr> LTS</a>
                 </li>
                 <li>
                     <a href="#menu">Our Menu</a>
                 </li>
                 <li>
-                    <a href="#hours">Store Hours</a>
+                    <a href="hours.html">Store Hours</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact Us</a>
+                    <a href="contact.html">Contact Us</a>
                 </li>
             </ul>
-            <img src="img/tacos_and_drink_400x267.png" alt="Tacos and Drinks" width="400" height="267">
+            
             <figure>
+                <img src="img/tacos_and_drink_400x267.png" alt="Tacos and a Drinks" title="We love tacos!" width="400" height="267">
                 <figcaption>
                     Tacos and a Drink
                 </figcaption>
@@ -34,18 +37,23 @@
     </header>
 
     <hr>
-
-    <h2>About LTS</h2>
-    <p>LTS was founded in 2022. Our shop was built from a <strong>love of tacos</strong> <!-- emojis -->. We hope our shoop adds a unique and intersting place to our little town.</p>
-    <h3>Taco Trivia</h3>
+    <main>
+        <article id="about">
+        <h2>About <abbr title="The Little Taco Shop"> LTS</abbr></h2>
+        <p><abbr title="The Little Taco Shop">LTS</abbr> was founded in <time datetime="2022">2022</time> Our shop was built from a <strong>love of tacos</strong> 🌮🌮🌮. We hope our shop adds a unique and intersting place to our little town.</p>
         <aside>
-            <details>
-                <summary>When did tacos first appear in the United States?</summary>
-                <p>1905</p>
-            </details>
+        <h3>Taco Trivia</h3>
+                <details>
+                    <summary>When did tacos first appear in the United States?</summary>
+                    <p>
+                        Jeffrey M Pilcher, taco historian and professor of history at the Universtiy of Minnesota, says the ealiest mention of tacos in the United States are in a newspaper from <time datetime="1905">1905</time>. (Source: <cite><a href="https://www.smithsonianmag.com/arts-culture/where-did-the-taco-come-from-81228162/" target="_blank">Smithsonian Magazine</a></cite>)
+                    </p>
+                </details>
         </aside>
+        </article>
+    </main>
     <hr>
-
+    <article id="menu">
     <h2>Our Menu</h2>
     <section>
     <table>
@@ -53,13 +61,13 @@
         <thead>
             <tr>
                 <th>Tacos</th>
-                <th>Qty</th>
-                <th>Price</th>
+                <th scope="col"><abbr title="Quantity">Qty</abbr></th>
+                <th scope="col">Price</th>
             </tr>
         </thead>
         <tbody>
         <tr>
-            <th rowspan="3">Crunchy</th>
+            <th scope="row" rowspan="3">Crunchy</th>
             <td>1</td>
             <td>$1.50</td>
             
@@ -91,7 +99,7 @@
     </tbody>
     <tfoot>
         <tr>
-            <td colspan="3">Chips & Salsa $2</td>
+            <td colspan="3">Chips &amp; Salsa $2</td>
         </tr>
     </tfoot>
     </table>
@@ -99,6 +107,7 @@
     <p>
         <a href="#">Back to Top</a>
     </p>
+</article>
 <hr>
     <footer>
         <p>
